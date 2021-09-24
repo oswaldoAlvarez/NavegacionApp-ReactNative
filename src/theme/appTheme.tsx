@@ -1,5 +1,12 @@
 import { StyleSheet } from 'react-native';
 
+export const colores = {
+  primary: '#512DA8',
+  textPrimary: 'white',
+  disableBG: '#DDE1E6',
+  disableText: '#999999'
+};
+
 export const styles = StyleSheet.create({
   globalMargin: {
     marginHorizontal: 20,
@@ -43,5 +50,26 @@ export const styles = StyleSheet.create({
   },
   genericBtn: {
     borderRadius: 8,
+  },
+  buttonBase: {
+    backgroundColor: colores.primary,
+    marginVertical: 5,
+    padding: 10,
+    alignItems: 'center',
+    borderRadius: 8,
+  },
+  textButtonBase: {
+    fontWeight: 'bold',
+    fontSize: 16,
+  },
+  inputStyle: {
+    borderBottomWidth: 1,
+    borderColor: 'rgba(0,0,0,0.3)',
+    height: 50,
+    paddingHorizontal: 10,
+    borderRadius: 10,
+    marginVertical: 10,
+    textAlign: 'center',
+    color: colores.primary,
   },
 });
